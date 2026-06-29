@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Détails Utilisateur</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Détails Utilisateur</h1>
+
+    <table border="1" width="100%" cellpadding="10">
+
+        <tr>
+            <th>ID</th>
+            <td id="id"></td>
+        </tr>
+
+        <tr>
+            <th>Nom</th>
+            <td id="nom"></td>
+        </tr>
+
+        <tr>
+            <th>Prénom</th>
+            <td id="prenom"></td>
+        </tr>
+
+        <tr>
+            <th>Âge</th>
+            <td id="age"></td>
+        </tr>
+
+        <tr>
+            <th>Pseudo</th>
+            <td id="pseudo"></td>
+        </tr>
+
+        <tr>
+            <th>Email</th>
+            <td id="email"></td>
+        </tr>
+
+        <tr>
+            <th>Pays</th>
+            <td id="pays"></td>
+        </tr>
+
+        <tr>
+            <th>Devise</th>
+            <td id="devise"></td>
+        </tr>
+
+        <tr>
+            <th>Couleur</th>
+            <td id="couleur"></td>
+        </tr>
+
+        <tr>
+            <th>Admin</th>
+            <td id="admin"></td>
+        </tr>
+
+    </table>
+
+    <br>
+
+    <button onclick="window.location.href='listeUtilisateurs.html'">
+        Retour
+    </button>
+
+</div>
+
+<script>
+
+const api = "https://670ed5b73e7151861655eaa3.mockapi.io/Stagiaire";
+
+const id = localStorage.getItem("idUtilisateur");
+
+fetch(api + "/" + id)
+.then(response => response.json())
+.then(user => {
+
+document.getElementById("id").textContent = user.id;
+document.getElementById("nom").textContent = user.nom;
+document.getElementById("prenom").textContent = user.prenom;
+document.getElementById("age").textContent = user.age;
+document.getElementById("pseudo").textContent = user.pseudo;
+document.getElementById("email").textContent = user.email;
+document.getElementById("pays").textContent = user.Pays;
+document.getElementById("devise").textContent = user.Devise;
+document.getElementById("couleur").textContent = user.couleur;
+document.getElementById("admin").textContent = user.admin ? "Oui" : "Non";
+
+});
+
+</script>
+
+</body>
+
+</html>

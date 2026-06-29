@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+
+    <link rel="stylesheet" href="css/layout.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+
+        <div class="logo">
+            <h2>Mini Projet JavaScript</h2>
+        </div>
+
+        <div class="user-info">
+            <span id="nomComplet"></span>
+
+            <button id="logout">
+                Se Déconnecter
+            </button>
+        </div>
+
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+
+        <ul>
+
+            <li>
+                <a href="pages/accueil.html" target="content">
+                    Accueil
+                </a>
+            </li>
+
+            <li>
+                <a href="pages/profile.html" target="content">
+                    Voir Mon Profile
+                </a>
+            </li>
+
+            <li>
+                <a href="pages/modifierCouleur.html" target="content">
+                    Modifier Couleur
+                </a>
+            </li>
+
+            <li id="adminMenu">
+                <a href="pages/listeUtilisateurs.html" target="content">
+                    Liste Utilisateurs
+                </a>
+            </li>
+
+            <li id="adminAdd">
+                <a href="pages/ajouterUtilisateur.html" target="content">
+                    Ajouter Utilisateur
+                </a>
+            </li>
+
+            <li>
+                <a href="pages/demandes.html" target="content">
+                    Demandes
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+    <!-- Content -->
+    <main>
+
+        <iframe
+            name="content"
+            src="pages/accueil.html"
+            width="100%"
+            height="600"
+            frameborder="0">
+        </iframe>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            ISTA Hay Salam - Développement Digital
+        </p>
+
+        <p>
+            Facebook | Instagram | LinkedIn
+        </p>
+
+    </footer>
+
+    <script src="js/layout.js"></script>
+
+</body>
+
+</html>

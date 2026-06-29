@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modifier Utilisateur</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Modifier Utilisateur</h1>
+
+    <form id="editForm">
+
+        <div class="input-box">
+            <label>Nom</label>
+            <input type="text" id="nom" required>
+        </div>
+
+        <div class="input-box">
+            <label>Prénom</label>
+            <input type="text" id="prenom" required>
+        </div>
+
+        <div class="input-box">
+            <label>Âge</label>
+            <input type="number" id="age" required>
+        </div>
+
+        <div class="input-box">
+            <label>Pseudo</label>
+            <input type="text" id="pseudo" required>
+        </div>
+
+        <div class="input-box">
+            <label>Email</label>
+            <input type="email" id="email" required>
+        </div>
+
+        <div class="input-box">
+            <label>Pays</label>
+            <input type="text" id="pays">
+        </div>
+
+        <div class="input-box">
+            <label>Devise</label>
+            <input type="text" id="devise">
+        </div>
+
+        <div class="input-box">
+            <label>Couleur</label>
+            <input type="color" id="couleur">
+        </div>
+
+        <div class="input-box">
+            <label>Admin</label>
+            <select id="admin">
+                <option value="true">Admin</option>
+                <option value="false">Visiteur</option>
+            </select>
+        </div>
+
+        <button type="submit">
+            Modifier
+        </button>
+
+    </form>
+
+</div>
+
+<script src="../js/modifierUtilisateur.js"></script>
+
+</body>
+</html>

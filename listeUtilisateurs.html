@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Liste Utilisateurs</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+        table{
+            width:100%;
+            border-collapse:collapse;
+            margin-top:20px;
+        }
+
+        th,td{
+            border:1px solid #ccc;
+            padding:10px;
+            text-align:center;
+        }
+
+        th{
+            background:#2c3e50;
+            color:white;
+        }
+
+        button{
+            margin:2px;
+            padding:7px 12px;
+        }
+
+        .btnVoir{
+            background:#3498db;
+            color:white;
+        }
+
+        .btnModifier{
+            background:#f39c12;
+            color:white;
+        }
+
+        .btnSupprimer{
+            background:#e74c3c;
+            color:white;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Liste des Utilisateurs</h1>
+
+    <table>
+
+        <thead>
+
+        <tr>
+
+            <th>ID</th>
+            <th>Nom</th>
+            <th>Prénom</th>
+            <th>Age</th>
+            <th>Pseudo</th>
+            <th>Email</th>
+            <th>Actions</th>
+
+        </tr>
+
+        </thead>
+
+        <tbody id="tbody">
+
+        </tbody>
+
+    </table>
+
+</div>
+
+<script src="../js/users.js"></script>
+
+</body>
+
+</html>
